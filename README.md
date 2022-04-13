@@ -35,7 +35,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 - ### Links
 
-   - Solution URL: [Here](https://your-solution-url.com)
+   - Solution URL: [Here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/responsive-card-with-html5-css3-flex-box-js-rJRBKWEEq)
    - Live Site URL: [Here](https://0genn0.github.io/Responsive-card-with-js/)
 
 ## My process
