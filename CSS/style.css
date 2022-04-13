@@ -1,0 +1,151 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/* Set Main Rules */
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 15px;
+   font-family: 'Overpass', sans-serif;
+   background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+   width: 400px;
+   border-radius: 30px;
+   background: radial-gradient(circle at center top, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+   box-shadow: 0px 0px 20px 0px hsl(0deg 0% 0% / 46%);
+}
+
+.front-container,
+.back-container {
+   width: 85%;
+   margin: auto;
+   padding: 30px 0 40px;
+}
+
+.hide {
+   display: none;
+}
+
+h1 {
+   color: white;
+   font-weight: 700;
+   padding: 30px 0 10px;
+}
+
+p {
+   color: hsl(217, 12%, 63%);
+   font-size: 15px;
+   line-height: 1.6;
+}
+
+.front-container .star-icon {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: hsl(213, 19%, 18%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.front-container section {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   padding: 30px 0;
+}
+
+.front-container section input {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: hsl(213, 19%, 18%);
+   text-align: center;
+   color: hsl(217, 12%, 63%);
+   font-size: 16px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: .5s;
+}
+
+.front-container input:hover {
+   background-color: hsl(25, 97%, 53%);
+   color: white;
+}
+
+.front-container input.active {
+   background-color: hsl(217, 12%, 63%);
+   color: white;
+}
+
+.front-container button {
+   width: 100%;
+   padding: 10px 0;
+   border: none;
+   background-color: hsl(25, 97%, 53%);
+   color: white;
+   font-size: 1.2em;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   border-radius: 21px;
+   cursor: pointer;
+}
+
+.front-container button:hover {
+   background-color: white;
+   color: hsl(25, 97%, 53%);
+}
+
+.back-container {
+   text-align: center;
+}
+
+.back-container .grade {
+   width: fit-content;
+   margin: 30px auto 10px;
+   padding: 5px 20px;
+   background-color: hsl(213, 19%, 18%);
+   color: hsl(25, 97%, 53%);
+   border-radius: 30px;
+   letter-spacing: 1px;
+}
+
+.attribution {
+   position: absolute;
+   bottom: 20px;
+   right: 50px;
+   color: hsl(216, 12%, 54%);
+   font-size: 1.2em;
+}
+
+.attribution a {
+   text-decoration: none;
+   color: aqua;
+}
+
+@media (max-width: 767px) {
+   .card {
+      max-width: 80%;
+      margin: auto;
+   }
+
+   .front-container section input {
+      width: 40px;
+      height: 40px;
+   }
+
+   .attribution {
+      text-align: center;
+      right: auto;
+      font-size: 15px;
+   }
+}
