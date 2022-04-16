@@ -1,21 +1,22 @@
 const frontContainer = document.querySelector('.front-container')
 const backContainer = document.querySelector('.back-container')
-const inputs = document.querySelectorAll('input')
+const listItem = document.querySelectorAll('li')
 const subButton = document.querySelector('button')
 const spanEl = document.querySelector('#grade')
 let grade = ''
 
-const addActiveClass = activeInput => {
-   inputs.forEach(input => {
-      input.classList.remove('active')
+const addActiveClass = activeLi => {
+   listItem.forEach(li => {
+      li.classList.remove('active')
    })
-   activeInput.classList.add('active')
+   activeLi.classList.add('active')
 }
 
-inputs.forEach(input => {
-   input.addEventListener('click', e => {
-      addActiveClass(input)
-      grade = e.target.value
+listItem.forEach(li => {
+   li.addEventListener('click', e => {
+      addActiveClass(li)
+      console.log(e)
+      grade = e.target.innerText
    })
 })
 
