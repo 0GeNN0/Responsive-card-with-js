@@ -49,7 +49,6 @@ p {
 .front-container .star-icon {
    width: 50px;
    height: 50px;
-   margin-top: 5px;
    border-radius: 50%;
    background-color: hsl(213, 19%, 18%);
    display: flex;
